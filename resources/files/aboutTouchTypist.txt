@@ -1,0 +1,5 @@
+This program is divided into two modes, the free practice mode and the game mode. In the free practice mode, users can practice touch typing freely with any character combination of their choice and without time constrains. For each key pressed on the keyboard, the corresponding key is highlighted on a virtual keyboard on your screen and character displayed on a text box to allow users watch  what they type without looking at the actual keyboard. To make learning more interesting, the game mode improves your typing skills(speed and accuracy) by playing a simple game. words are moving up the screen and you have to stop them in 60 seconds by typing each word correctly, then pressing the "enter key" without looking at your actual keyboard. Each word entered correctly will be taken off the screen. 20WPM(words per minutes) for a beginner typist, 40WPM for an average Typist and 60WPM for a professional Typist(TouchTypist). At the end of each game, users are shown their performance to know how they have progressed so far.
+Game shortcut:
+Ctrl+A play Game
+Ctrl+P Pause Game
+Ctrl+X Stop Game

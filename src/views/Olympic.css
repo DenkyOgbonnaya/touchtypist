@@ -1,0 +1,49 @@
+.root{
+	-fx-background-color:#090a0c;
+}
+.button{
+	-fx-background-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(51,0,51) 0.0, rgb(0,0,0) 100.0 );
+	-fx-text-fill:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, reflect, rgb(255,255,255) 0.0, rgb(255,255,255) 100.0 ) ;
+	-fx-background-radius: 5,4,3,5; 
+	-fx-background-insets: 0,1,2,0; 
+	-fx-text-fill:white;
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+	-fx-font-family: "Arial"; 
+	
+}
+.slider{
+	-fx-background-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(51,0,51) 0.0, rgb(0,0,0) 100.0 );
+}
+
+.label{
+	-fx-text-fill:white;
+	}
+.menu-bar{
+	-fx-background-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(51,0,51) 0.0, rgb(0,0,0) 100.0 );
+}
+.menu{
+	-fx-background-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(51,0,51) 0.0, rgb(0,0,0) 100.0 );
+	
+}
+.menu-item{
+	-fx-background-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(51,0,51) 0.0, rgb(0,0,0) 100.0 );
+}
+.text-field{
+	-fx-background-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(51,0,51) 0.0, rgb(0,0,0) 100.0 );
+	-fx-text-fill: white ;
+}
+.textArea{
+	-fx-background-color:linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(51,0,51) 0.0, rgb(0,0,0) 100.0);
+	-fx-border-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(26,26,26) 0.0, rgb(51,0,51) 100.0 );
+	-fx-border-radius:15px 
+}
+.dialog-pane{
+	-fx-background-color:black ;
+}
+.dialog-pane.label{
+	-fx-text-fill:white ;
+}
+.dialog-pane.button{
+	-fx-background-color:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, reflect, rgb(77,26,77) 0.0, rgb(0,0,0) 100.0 ) ;
+	-fx-text-fill:radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, reflect, rgb(255,255,255) 0.0, rgb(255,255,255) 100.0 ) ;
+}

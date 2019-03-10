@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppController">
+   <center>
+      <VBox maxHeight="900.0" maxWidth="800.0" minHeight="880.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="textArea" focusTraversable="false" maxWidth="780.0" onKeyPressed="#keyPressed" onKeyReleased="#keyReleased" prefHeight="453.0" prefWidth="780.0" promptText="Click here to start typing....." wrapText="true">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </TextArea>
+            <StackPane minHeight="25.0" prefHeight="25.0" prefWidth="769.0">
+               <children>
+                  <TextField fx:id="textField" editable="false" minHeight="25.0" onKeyPressed="#keyPressed" onKeyReleased="#keyReleased" prefHeight="25.0" prefWidth="769.0">
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                  </TextField>
+                  <Text fx:id="castText" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+            </StackPane>
+            <FlowPane hgap="15.0" maxHeight="215.0" maxWidth="800.0" minHeight="150.0" prefHeight="250.0" prefWidth="800.0" prefWrapLength="80.0" vgap="7.0">
+               <children>
+                  <Button fx:id="btn1" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="!  1" />
+                  <Button fx:id="btn2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="47.0" text="\@  2" />
+                  <Button fx:id="btn3" mnemonicParsing="false" prefHeight="32.0" prefWidth="46.0" text="#  3" />
+                  <Button fx:id="btn4" layoutX="114.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="\$  4" />
+                  <Button fx:id="btn5" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="\% 5" />
+                  <Button fx:id="btn6" layoutX="218.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="38.0" text="^  6" />
+                  <Button fx:id="btn7" layoutX="270.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="39.0" text="&amp;  7" />
+                  <Button fx:id="btn8" layoutX="322.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="45.0" text="*  8" />
+                  <Button fx:id="btn9" layoutX="374.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="42.0" text="(  9" />
+                  <Button fx:id="btn0" layoutX="426.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="48.0" text=")  0" />
+                  <Button fx:id="btnDash" layoutX="478.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="50.0" text="-  _" />
+                  <Button fx:id="btnEq" layoutX="530.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="52.0" text="+  =" />
+                  <Button fx:id="btnBs" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="71.0" text="backspace" />
+                  <Button fx:id="btnTab" layoutX="62.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="47.0" text="tab" />
+                  <Button fx:id="btnQ" layoutX="114.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="38.0" text="Q" />
+                  <Button fx:id="btnW" layoutX="166.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="W" />
+                  <Button fx:id="btnE" layoutX="218.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="E" />
+                  <Button fx:id="btnR" layoutX="270.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="R" />
+                  <Button fx:id="btnT" layoutX="322.0" layoutY="35.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="40.0" text="T" />
+                  <Button fx:id="btnY" layoutX="374.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="Y" />
+                  <Button fx:id="btnU" layoutX="426.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="U" />
+                  <Button fx:id="btnI" layoutX="478.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="I" />
+                  <Button fx:id="btnO" layoutX="530.0" layoutY="35.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="O" />
+                  <Button fx:id="btnP" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="P" />
+                  <Button fx:id="btnOsquare" layoutX="62.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="[" />
+                  <Button fx:id="btnCsquare" layoutX="114.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="]" />
+                  <Button fx:id="btnBSlash" layoutX="166.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="\\" />
+                  <Button fx:id="btnCaps" layoutX="218.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="74.0" text="Caps" />
+                  <Button fx:id="btnA" layoutX="270.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="A" />
+                  <Button fx:id="btnS" layoutX="322.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="42.0" text="S" />
+                  <Button fx:id="btnD" layoutX="374.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="D" />
+                  <Button fx:id="btnF" layoutX="426.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="F." />
+                  <Button fx:id="btnG" layoutX="478.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="G" />
+                  <Button fx:id="btnH" layoutX="530.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="H" />
+                  <Button fx:id="btnJ" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="40.0" text=".J" />
+                  <Button fx:id="btnK" layoutX="62.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="K" />
+                  <Button fx:id="btnL" layoutX="166.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="L" />
+                  <Button fx:id="btnSc" layoutX="166.0" layoutY="60.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text=":   ;" />
+                  <Button fx:id="btnApos" layoutX="218.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="&quot;&quot;  '" />
+                  <Button fx:id="btnEnter" layoutX="270.0" layoutY="85.0" mnemonicParsing="false" onKeyPressed="#keyPressed" onKeyReleased="#keyReleased" prefHeight="32.0" prefWidth="83.0" text="Enter" />
+                  <Button fx:id="btnShift" layoutX="322.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="112.0" text="Shift" />
+                  <Button fx:id="btnZ" layoutX="374.0" layoutY="85.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="40.0" text="Z" />
+                  <Button fx:id="btnX" layoutX="426.0" layoutY="85.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="40.0" text="X" />
+                  <Button fx:id="btnC" layoutX="478.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="C" />
+                  <Button fx:id="btnV" layoutX="530.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="V" />
+                  <Button fx:id="btnB" layoutX="322.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="B" />
+                  <Button fx:id="btnN" layoutX="322.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="N" />
+                  <Button fx:id="btnM" layoutX="322.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="M" />
+                  <Button fx:id="btnCom" layoutX="270.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="," />
+                  <Button fx:id="btnDot" layoutX="322.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="." />
+                  <Button fx:id="btnFslash" layoutX="270.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="? /" />
+                  <Region prefHeight="40.0" prefWidth="0.0" />
+                  <Button fx:id="btnUp" layoutX="322.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="41.0" text="^" />
+                  <Region prefHeight="40.0" prefWidth="32.0" />
+                  <Button fx:id="btnCtrl" layoutX="426.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="45.0" text="ctrl" />
+                  <Button fx:id="btnAlt" layoutX="310.0" layoutY="60.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" text="alt" />
+                  <Region prefHeight="40.0" prefWidth="77.0" />
+                  <Button fx:id="btnSpace" layoutX="94.0" layoutY="140.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="260.0">
+                     <FlowPane.margin>
+                        <Insets />
+                     </FlowPane.margin></Button>
+                  <Region prefHeight="40.0" prefWidth="88.0" />
+                  <Button fx:id="btnAltg" layoutX="292.0" layoutY="140.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="44.0" text="alt gr" />
+                  <Button fx:id="btnLeft" layoutX="330.0" layoutY="140.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="&lt;" />
+                  <Button fx:id="btnDown" layoutX="374.0" layoutY="140.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" text="v" />
+                  <Button fx:id="btnRight" layoutX="289.0" layoutY="140.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="34.0" text="&gt;" />
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </FlowPane>
+            <Region prefHeight="33.0" prefWidth="800.0" />
+            <FlowPane fx:id="flowPane" maxWidth="800.0" minWidth="800.0" prefHeight="54.0" prefWidth="800.0" prefWrapLength="80.0">
+               <padding>
+                  <Insets left="2.0" right="2.0" />
+               </padding>
+            </FlowPane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="_File">
+            <items>
+              <MenuItem fx:id="exitBtn" mnemonicParsing="false" onAction="#exitGame" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="_Edit">
+            <items>
+                  <Menu mnemonicParsing="false" text="Reset Game Records">
+                     <items>
+                        <MenuItem fx:id="bigBtn" mnemonicParsing="false" onAction="#resetRecords" text="Beginner" />
+                        <MenuItem fx:id="intBtn" mnemonicParsing="false" onAction="#resetRecords" text="Intermediate" />
+                        <MenuItem mnemonicParsing="false" onAction="#resetRecords" text="Expert" />
+                     </items></Menu>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="_Game">
+               <items>
+                  <Menu fx:id="dLevel" disable="true" mnemonicParsing="false" text="Difficulty Level">
+                    <items>
+                        <RadioMenuItem fx:id="rdBeginner" mnemonicParsing="false" onAction="#gameLevel" selected="true" text="Beginner">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="difficultyToggle" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem fx:id="rdIntermediate" mnemonicParsing="false" onAction="#gameLevel" text="Intermediate" toggleGroup="$difficultyToggle" />
+                        <RadioMenuItem fx:id="rdExpert" mnemonicParsing="false" onAction="#gameLevel" text="Expert" toggleGroup="$difficultyToggle" />
+                    </items>
+                  </Menu>
+                  <Menu fx:id="gOption" disable="true" mnemonicParsing="false" text="Game Options">
+                    <items>
+                        <RadioMenuItem fx:id="rdPlay" mnemonicParsing="false" onAction="#gameOptions" text="Play">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="optionsToggle" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem fx:id="rdPause" mnemonicParsing="false" onAction="#gameOptions" text="Pause Game" toggleGroup="$optionsToggle" />
+                        <RadioMenuItem fx:id="rdStop" mnemonicParsing="false" onAction="#gameOptions" text="Stop" toggleGroup="$optionsToggle" />
+                    </items>
+                  </Menu>
+                  <Menu fx:id="gSound" disable="true" mnemonicParsing="false" text="Game Sound">
+                    <items>
+                        <RadioMenuItem fx:id="volAdjust" mnemonicParsing="false" onAction="#volumeControl" selected="true" text="Volume+-">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="soundToggle" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem fx:id="volMute" mnemonicParsing="false" onAction="#volumeControl" text="Mute" toggleGroup="$soundToggle" />
+                    </items>
+                  </Menu>
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="_Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aboutApp" text="Veiw Help" />
+                  <MenuItem mnemonicParsing="false" onAction="#typingTips" text="Typing Tips" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#privacyPolicy" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            <Slider fx:id="volSlider" blockIncrement="0.1" majorTickUnit="0.1" max="1.0" min="0.1" minorTickCount="1" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="0.5" visible="false">
+               <VBox.margin>
+                  <Insets left="12.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Slider>
+            <Label text="Switch to">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnSwitch" mnemonicParsing="false" onAction="#onBtnSwitch_Clicked" text="Game Mode">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            <Region prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="141.0" prefWidth="100.0" />
+            <HBox fx:id="hBoxTimer" prefHeight="26.0" prefWidth="100.0" visible="false">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="40.0" text=" Time : ">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timerLabel" text=" ">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hBoxHit" layoutX="10.0" layoutY="283.0" prefHeight="100.0" prefWidth="62.0" visible="false">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="40.0" text="Hit : ">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="hitLabel">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </HBox>
+            <Region layoutX="10.0" layoutY="10.0" prefHeight="193.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
